@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Daniil Medvedev – Gallery</title>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <header class='site-header'>
+    <h1>Medvedev Gallery</h1>
+    <nav><a href='#gallery'>Gallery</a><a href='#about'>About</a></nav>
+    <button id='toggle' aria-label='Toggle theme'>Dark</button>
+  </header>
+  <section class='hero'>
+    <div class='hero-inner'>
+      <h2>Visual portfolio</h2>
+      <p>Click thumbnails to reveal details.</p>
+      <button data-target='about'>Info</button>
+    </div>
+  </section>
+  <section id='gallery' class='panel'>
+    <h3>Gallery</h3>
+    <div class='thumbs'>
+      <button class='thumb' data-src='01'>Photo 1</button>
+      <button class='thumb' data-src='02'>Photo 2</button>
+      <button class='thumb' data-src='03'>Photo 3</button>
+      <button class='thumb' data-src='04'>Photo 4</button>
+    </div>
+    <div id='viewer' class='viewer'>Click a thumbnail</div>
+  </section>
+  <section id='about' class='panel'>
+    <h3>About</h3>
+    <p>Minimal gallery with interactive viewer using vanilla JS.</p>
+  </section>
+  <footer class='site-footer'>© 2026</footer>
+  <script src='script.js'></script>
+</body>
+</html>
